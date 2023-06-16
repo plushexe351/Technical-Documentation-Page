@@ -114,7 +114,7 @@ i {
 }
 #navbar.active {
   display: block;
-  height: 50%;
+  height: 300px;
 }
 .colored-text {
   color: plum;
