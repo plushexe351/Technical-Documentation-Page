@@ -9,3 +9,9 @@ navlinks.forEach(navlink => {
         navbar.classList.remove('active');
     })
 });
+
+navbar.addEventListener('click', () => {
+    if (navbar.classList.contains('active')) {
+        navbar.classList.remove('active');
+    }
+});
