@@ -8,18 +8,20 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: rgb(8, 0, 34);
+  background-color: black;
   min-height: 100vh;
   color: white;
 }
+#main-doc {
+  margin-right: calc(20% + 50px);
+  max-width: 1300px;
+}
 #main-header {
-  margin-left: 20%;
-  padding: 30px 150px;
+  padding: 50px 150px 0 150px;
 }
 section {
   min-height: 100vh;
-  margin-left: 20%;
-  padding-inline: 150px;
+  padding: 30px 150px;
 }
 header {
   font-size: 1.5rem;
@@ -27,39 +29,42 @@ header {
   padding-block: 20px;
 }
 section header {
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(80, 47, 181, 0.402);
+  border-bottom: 1px solid purple;
 }
 #navbar {
   position: fixed;
-  left: 0;
-  top: 0;
+  right: 50px;
+  top: 50px;
   width: 20%;
-  height: 100%;
-  background-color: rgb(17, 6, 51);
+  overflow: hidden;
 }
 #main-header h1 {
   font-size: 2.5rem;
 }
 #description {
   font-weight: 300;
-  opacity: 0.3;
+  color: rgb(128, 128, 128);
 }
 #navbar header {
   text-align: center;
-  background-color: rgba(80, 47, 181, 0.402);
+  background-color: purple;
 }
 #navbar a {
   font-size: 0.9rem;
   padding: 10px;
-  border-bottom: 1px solid rgba(80, 47, 181, 0.402);
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.993);
+  border-bottom: 1px solid purple;
+
   text-decoration: none;
   color: white;
   display: block;
 }
+/* #navbar a:last-of-type {
+  border: none;
+} */
 #navbar a:hover {
-  background-color: rgba(26, 12, 69, 0.402);
+  background-color: rgb(0, 0, 0);
+  color: plum;
   text-decoration: underline;
 }
 .main-section p,
@@ -67,6 +72,47 @@ ul {
   font-size: 1.1rem;
   margin-top: 20px;
 }
+ul li {
+  color: rgb(255, 211, 255);
+}
+i {
+  margin-right: 10px;
+}
 .main-section ul {
   margin-left: 40px;
+}
+.fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (max-width: 1150px) {
+  #navbar {
+    height: 0;
+  }
+  #main-doc {
+    margin: 0;
+  }
+  .fa-bars {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  #main-header,
+  section {
+    padding-inline: 10vw;
+  }
+  #main-header h1 {
+    font-size: 2rem;
+  }
+  #description {
+    font-size: 1.2rem;
+  }
+  .main-section p,
+  ul {
+    font-size: 0.9rem;
+  }
 }
