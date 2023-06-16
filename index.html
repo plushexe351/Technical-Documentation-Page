@@ -33,11 +33,11 @@
 
         <p>
           Responsive web design is an approach that focuses on creating websites
-          that dynamically adjust their layout, content, and functionality based
-          on the characteristics of the device being used. By employing
-          responsive design techniques, we can ensure that our websites look and
-          function well regardless of whether they are viewed on a small
-          smartphone screen or a large desktop monitor.
+          that <em>dynamically</em> adjust their layout, content, and
+          functionality based on the characteristics of the device being used.
+          By employing responsive design techniques, we can ensure that our
+          websites look and function well regardless of whether they are viewed
+          on a small smartphone screen or a large desktop monitor.
         </p>
         <p>Topics covered in this documentation :</p>
         <ul>
@@ -58,8 +58,64 @@
       </section>
       <section class="main-section" id="html">
         <header><i class="fa-brands fa-html5"></i>HTML 5</header>
+        <p>
+          HTML stands for
+          <span class="colored-text">Hypertext Markup Language.</span> It is the
+          standard markup language used for creating web pages and defining
+          their structure and content. HTML uses a set of markup tags or
+          elements to structure and format the text, images, multimedia, links,
+          and other elements within a web page.
+        </p>
+
+        <p>
+          HTML documents consist of a series of elements enclosed in opening and
+          closing tags. The tags define the purpose and behavior of the enclosed
+          content. For example, the
+          <span class="colored-text">&lt;h1&gt;</span> tag is used to indicate a
+          heading, the <span class="colored-text">&lt;p&gt;</span> tag
+          represents a paragraph, and the
+          <span class="colored-text">&lt;img&gt;</span>
+          tag is used to insert an image.
+        </p>
+
+        <p>Here's a basic example of HTML code:</p>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+              &lt;title&gt;My Web Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <p>In the example above:</p>
+        <ul>
+            <li>The <span class="colored-text">&lt;!DOCTYPE html&gt;</span> declaration specifies the HTML version (in this case, HTML5).</li>
+            <li>The <span class="colored-text">&lt;html&gt;</span> element serves as the root element and contains all other elements of the web page.</li>
+            <li>The <span class="colored-text">&lt;head&gt;</span> element contains meta-information about the page, such as the title displayed in the browser's title bar.</li>
+            <li>The <span class="colored-text">&lt;body&gt;</span> element contains the visible content of the web page.</li>
+             <li>The <span class="colored-text">&lt;h1&gt;</span> element represents a heading.</li>
+              <li>The <span class="colored-text">&lt;p&gt;</span> element defines a paragraph of text.</li>
+              <li>The <span class="colored-text">&lt;img&gt;</span> element is used to insert an image, where the src attribute specifies the image source (URL or file path) and the alt attribute provides alternative text for accessibility.</li>
+              <li>The <span class="colored-text">&lt;a&gt;</span> element creates a hyperlink, with the href attribute defining the URL to link to.</li>
+          </ul>
+          <p>HTML5 supports responsive web design principles by providing features like media queries, which allow developers to apply different styles based on the device or screen size. This helps create websites that adapt and respond effectively to various devices and screen resolutions.</p>
+          <p>HTML plays a crucial role in responsive web design. It provides the structure and content of a web page, allowing developers to create a foundation for responsive behavior. Here are some ways HTML contributes to responsive web design:</p>
+
+  <ul>
+    <li><strong class="colored-text">Semantic Structure:</strong> HTML5 introduces semantic elements like &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, and &lt;footer&gt;. These elements define the different sections and components of a web page, making it easier to structure and organize content.</li>
+    <li><strong class="colored-text">Media Queries:</strong> HTML works in conjunction with CSS media queries to apply different styles and layouts based on the characteristics of the user's device.</li>
+    <li><strong class="colored-text">Responsive Images:</strong> HTML provides the &lt;img&gt; element for embedding images in a web page. To make images responsive, you can use the srcset attribute to specify different image sources based on screen size or pixel density.</li>
+    <li><strong class="colored-text">Fluid Grids and Flexible Layouts:</strong> HTML, along with CSS, is used to create fluid grids and flexible layouts. By applying percentage-based widths and max-widths to HTML elements, you can ensure that they adapt and scale smoothly based on the available screen space.</li>
+    <li><strong class="colored-text">Mobile-first Approach:</strong> HTML helps facilitate the mobile-first approach in responsive design. By starting with a mobile-first mindset in HTML, you ensure that your design is optimized for smaller screens and progressively enhances for larger ones.</li>
+    <li><strong class="colored-text">Accessibility:</strong> HTML provides semantic elements, attributes, and markup techniques that improve accessibility.</li>
+  </ul>
+
+  <p>In summary, HTML forms the structural backbone of a web page and provides the foundation for responsive web design. It enables the organization of content, facilitates the implementation of responsive layouts and images, and works in conjunction with CSS to create responsive behavior based on the user's device or screen size.</p>
       </section>
-      <section class="main-section" id="css">
+      <section class="<li></li>main-section" id="css">
         <header>
           <i class="fa-brands fa-css3-alt"></i>Cascading Style Sheets (CSS)
         </header>
@@ -73,7 +129,7 @@
     </main>
     <i class="fa fa-bars"></i>
     <nav id="navbar">
-      <header>Menu</header>
+      <header>Content</header>
       <a href="#introduction">Introduction</a>
       <a href="#html">HTML5</a>
       <a href="#css">CSS3</a>

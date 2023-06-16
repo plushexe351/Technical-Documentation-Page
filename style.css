@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Poppins, sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -11,6 +10,7 @@ body {
   background-color: black;
   min-height: 100vh;
   color: white;
+  font-family: Poppins, sans-serif;
 }
 #main-doc {
   margin-right: calc(20% + 50px);
@@ -47,23 +47,22 @@ section header {
 }
 #navbar header {
   text-align: center;
+  color: white;
   background-color: purple;
 }
 #navbar a {
   font-size: 0.9rem;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.993);
+  /* background-color: white; */
   border-bottom: 1px solid purple;
 
   text-decoration: none;
   color: white;
   display: block;
 }
-/* #navbar a:last-of-type {
-  border: none;
-} */
+
 #navbar a:hover {
-  background-color: rgb(0, 0, 0);
   color: plum;
   text-decoration: underline;
 }
@@ -72,8 +71,12 @@ ul {
   font-size: 1.1rem;
   margin-top: 20px;
 }
-ul li {
-  color: rgb(255, 211, 255);
+#introduction ul li {
+  /* color: rgb(255, 211, 255); */
+  color: plum;
+}
+ul li{
+  margin-block:10px;
 }
 i {
   margin-right: 10px;
@@ -83,15 +86,36 @@ i {
 }
 .fa-bars {
   position: fixed;
-  top: 20px;
-  right: 50px;
+  top: 10px;
+  right: 10px;
   display: none;
   cursor: pointer;
   z-index: 1;
 }
+#navbar.active {
+  height: 100%;
+}
+.colored-text {
+  color: plum;
+}
+code {
+  margin-top: 50px;
+  border:1px solid black;
+  display: block;
+  /* background-color: #f7f7f7; */
+  border:1px solid #f7f7f7;
+  color:rgb(183, 183, 183);
+  padding: 10px;
+  font-size: 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
 @media (max-width: 1150px) {
   #navbar {
     height: 0;
+    width: 100%;
+    top: 0;
+    right: 0;
   }
   #main-doc {
     margin: 0;
