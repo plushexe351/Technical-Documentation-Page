@@ -10,7 +10,9 @@ body {
   background:linear-gradient(to right, black,rgb(29, 0, 29));
   background-color: black;
   min-height: 100vh;
-  color: white;
+  
+  color:white;
+  
   font-family: Poppins, sans-serif;
 }
 #main-doc {
@@ -23,27 +25,31 @@ body {
 section {
   min-height: 100vh;
   padding: 30px 150px;
+  line-height:2rem;
+  color: rgb(181, 181, 181);
 }
-section p:first-of-type{
-  margin-top: 150px;
-}
+
 header {
   font-size: 1.5rem;
   font-weight: 800;
   padding-block: 20px;
+
 }
 section header {
   position: absolute;
   left:0;
   font-size: 2rem;
   background:linear-gradient(to right,purple,rgb(50, 0, 50));
+color: white;
   border:1px solid white;
   border-left:none;
-  min-width:300px;
-  width:40vw;
-  max-width: 80vw;
+  width:700px;
+  max-width: 75vw;
   text-align: right;
   padding-inline:50px;
+}
+section p:first-of-type{
+  margin-top: 140px;
 }
 #navbar {
   position: fixed;
@@ -69,12 +75,15 @@ section header {
   border-radius: 4px;
   background:linear-gradient(to right,rgb(78, 0, 78),purple);
 }
+a{
+  text-decoration: none;
+}
 #navbar a {
   font-size: 0.9rem;
   padding:10px;
   /* background-color: white; */
   border-bottom: 1px solid purple;
-  text-decoration: none;
+ 
   color: white;
   display: block;
   transition:0.3s;
@@ -86,7 +95,7 @@ section header {
   margin-left:20px;
 }
 .main-section p,
-ul {
+ul,ol {
   font-size: 1.1rem;
   margin-top: 20px;
 }
@@ -95,13 +104,15 @@ ul {
   color: plum;
 }
 ul li{
-  margin-block:10px;
+  margin-block:20px;
 }
 i {
-  margin-right: 10px;
+  margin-inline: 10px;
 }
 .main-section ul {
   margin-left: 40px;
+  list-style: disc;
+  
 }
 .fa-bars {
   position: fixed;
@@ -113,27 +124,74 @@ i {
   z-index: 3;
 }
 #navbar.active {
-  display: block;
   height: 300px;
 }
 .colored-text {
   color: plum;
 }
 code {
-  margin-top: 50px;
-  border:1px solid black;
+  margin-block: 40px;
+  border:1px solid rgb(0, 0, 0);
   display: block;
-  /* background-color: #f7f7f7; */
+  background-color: #000000;
   border:1px solid #f7f7f7;
+  border-radius: 10px;
   color:rgb(183, 183, 183);
+  /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.104); */
   padding: 10px;
   font-size: 1rem;
   overflow-x: auto;
   white-space: pre-wrap;
 }
+ol li h2.colored-text{
+  color:rgb(194, 0, 194);
+}
+footer {
+  border-top: 1px solid #ffffff20;
+  padding: 10px;
+  text-align: center;
+}
+footer a{
+  color: purple;
+}
+div.icons-container{
+  /* height:300px; */
+  position:fixed;
+  right:50px;
+  bottom:50px;
+  max-width: 300px;
+  text-align: center;
+}
+.icons-container i{
+  opacity: 0.1;
+  color: white;
+  padding:10px;
+}
+.icons-container i:nth-of-type(odd){
+  font-size: 60px;
+  /* animation: anim1 2s linear infinite; */
+}
+.icons-container i:nth-of-type(even),
+.icons-container i:last-of-type{
+  font-size: 40px;
+  /* animation: anim2 2s linear infinite; */
+}
+@keyframes anim1 {
+  50%{
+    transform: scale(1.2);
+  }
+}
+@keyframes anim2 {
+  0%,100%{
+    transform: scale(1.4);
+  }
+  50%{
+    transform: scale(1);
+  }
+
+}
 @media (max-width: 1150px) {
   #navbar {
-    /* display: none; */
     height: 0;
     width: 100%;
     top: 0;
