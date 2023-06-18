@@ -19,8 +19,12 @@ body {
   margin-right: calc(20% + 50px);
   max-width: 1300px;
 }
-#main-header {
+#main-head {
   padding: 50px 150px 0 150px;
+  font-size: 2.5rem;
+}
+#main-head p{
+  font-size: 1.5rem;
 }
 section {
   min-height: 100vh;
@@ -28,24 +32,22 @@ section {
   line-height:2rem;
   color: rgb(181, 181, 181);
 }
-
 header {
   font-size: 1.5rem;
   font-weight: 800;
   padding-block: 20px;
-
+  color: white;
 }
-section header {
+section > header {
   position: absolute;
   left:0;
   font-size: 2rem;
   background:linear-gradient(to right,purple,rgb(50, 0, 50));
-color: white;
   border:1px solid plum;
   letter-spacing: 2px;
   border-left:none;
   width:700px;
-  max-width: 75vw;
+  max-width: 95vw;
   text-align: right;
   padding:30px 50px;
 }
@@ -61,16 +63,14 @@ section p:first-of-type{
   z-index: 1;
 
 }
-#main-header h1 {
-  font-size: 2.5rem;
-}
+
 #description {
   font-weight: 300;
   color: rgb(128, 128, 128);
 }
 #navbar header {
+  font-size: 1rem;
   text-align: center;
-  /* color: plum; */
   border-radius: 4px;
   background:linear-gradient(to right,rgb(78, 0, 78),purple);
 }
@@ -95,7 +95,7 @@ ul,ol {
   font-size: 1.1rem;
   margin-top: 20px;
 }
-#introduction ul li {
+#Introduction ul li {
   color: plum;
 }
 ul li{
@@ -112,7 +112,7 @@ i {
 .fa-bars {
   position: fixed;
   font-size: 1.5rem;
-  top: 10px;
+  top: 5px;
   right: 10px;
   display: none;
   cursor: pointer;
@@ -126,13 +126,11 @@ i {
 }
 code {
   margin-block: 40px;
-  border:1px solid rgb(0, 0, 0);
   display: block;
   background-color: #000000;
   border:1px solid #f7f7f7;
   border-radius: 10px;
   color:rgb(183, 183, 183);
-  /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.104); */
   padding: 10px;
   font-size: 1rem;
   overflow-x: auto;
@@ -150,7 +148,6 @@ footer a{
   color: purple;
 }
 div.icons-container{
-  /* height:300px; */
   position:fixed;
   right:50px;
   bottom:50px;
@@ -164,12 +161,10 @@ div.icons-container{
 }
 .icons-container i:nth-of-type(odd){
   font-size: 60px;
-  /* animation: anim1 2s linear infinite; */
 }
 .icons-container i:nth-of-type(even),
 .icons-container i:last-of-type{
   font-size: 40px;
-  /* animation: anim2 2s linear infinite; */
 }
 @keyframes anim1 {
   50%{
@@ -187,12 +182,19 @@ div.icons-container{
 }
 @media (max-width: 1150px) {
   #navbar {
-    height: 0;
+    height:40px;
     width: 100%;
     top: 0;
     right: 0;
     background-color: rgb(0, 0, 0);
     transition: 0.3s ease;
+  }
+  #navbar header{
+    text-align: right;
+    padding-right:60px;
+    font-size: 0.7rem;
+    padding-block:5px;
+    background: unset;
   }
   #main-doc {
     margin: 0;
@@ -202,14 +204,14 @@ div.icons-container{
   }
 }
 @media (max-width: 800px) {
-  #main-header,
+  #main-head,
   section {
     padding-inline: 10vw;
   }
   section header{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
-  #main-header h1 {
+  #main-head {
     font-size: 2rem;
   }
   #description {
