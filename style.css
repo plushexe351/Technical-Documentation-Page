@@ -40,7 +40,7 @@ section header {
   left:0;
   font-size: 2rem;
   background:linear-gradient(to right,purple,rgb(50, 0, 50));
-color: plum;
+color: white;
   border:1px solid plum;
   letter-spacing: 2px;
   border-left:none;
@@ -70,7 +70,7 @@ section p:first-of-type{
 }
 #navbar header {
   text-align: center;
-  color: white;
+  /* color: plum; */
   border-radius: 4px;
   background:linear-gradient(to right,rgb(78, 0, 78),purple);
 }
