@@ -10,10 +10,9 @@ sections.forEach(section => {
         }
     })
 })
-
-ham.addEventListener('click', () => {
+ham.onclick = function () {
     navbar.classList.toggle('active');
-})
+}
 navlinks.forEach(navlink => {
     navlink.addEventListener('click', () => {
         navbar.classList.remove('active');
